@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Match 💕</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fce4ec;
+}
+
+.container {
+    margin: 100px auto;
+    padding: 20px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+h1 {
+    color: #e91e63;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #e91e63;
+    border-radius: 5px;
+}
+
+button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c2185b;
+}
+
+</style>
+<body>
+    <div class="container">
+        <h1>Find Your Love Match 💖</h1>
+        <form action="/match" method="POST">
+            <label for="name1">Enter First Name:</label>
+            <input type="text" id="name1" name="name1" required>
+
+            <label for="name2">Enter Second Name:</label>
+            <input type="text" id="name2" name="name2" required>
+
+            <button type="submit">Calculate Match 🔍</button>
+        </form>
+    </div>
+</body>
+</html>
